@@ -1,0 +1,21 @@
+--- vlc-2.2.8/modules/gui/qt4/actions_manager.cpp
++++ vlc-2.2.8/modules/gui/qt4/actions_manager.cpp
+@@ -38,6 +38,8 @@
+ #include "components/controller.hpp" /* Toggle FSC controller width */
+ #include "components/extended_panels.hpp"
+ 
++#include <QAction>
++
+ ActionsManager::ActionsManager( intf_thread_t * _p_i )
+ {
+     p_intf = _p_i;
+--- vlc-2.2.8/modules/gui/qt4/components/simple_preferences.cpp
++++ vlc-2.2.8/modules/gui/qt4/components/simple_preferences.cpp
+@@ -35,6 +35,7 @@
+ 
+ #include <QString>
+ #include <QFont>
++#include <QButtonGroup>
+ #include <QToolButton>
+ #include <QSignalMapper>
+ #include <QVBoxLayout>
